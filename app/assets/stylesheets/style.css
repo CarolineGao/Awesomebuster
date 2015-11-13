@@ -813,7 +813,7 @@ input[type="color"]:focus,
 
 /*carousel slider*/
 #myCarousel{
-    background: url(../imgages/showcase-2.jpg) no-repeat;
+    background: url(../img/showcase-2.jpg) no-repeat;
 }
 .item-c-slide{
     height: 480px;
@@ -2426,7 +2426,7 @@ ul.post-desc li + li{
 /****************************breadcrumb***************************/
 .breadcrumb-wrap{
     padding: 65px 0;
-background:url(../images/bread-bg.jpg) no-repeat top center;
+background:url(../img/bread-bg.jpg) no-repeat top center;
 }
 .breadcrumb-wrap h4{
     margin: 0px;
