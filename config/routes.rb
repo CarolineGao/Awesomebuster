@@ -1,5 +1,25 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'about/index' => 'aboutus#index_aboutus'
+
+  get 'techexperts/index' => 'techexperts#index_techexpert'
+
+  get 'products/index' => 'products#index_product'
+
+  get 'processes/index' => 'processes#index_process'
+
+  get 'prices/index' => 'prices#index_price'
+
+  get 'faqs/index' => 'faqs#index_faq'
+
+  get 'contacts/index' => 'contacts#index_contact'
+
+  get 'career/index' => 'career#index_career'
+
+  get 'busters/index' => 'busters#index_buster'
+
+  get 'blogs/index' => 'blogs#index_blog'
+
+  get 'home/index' => 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

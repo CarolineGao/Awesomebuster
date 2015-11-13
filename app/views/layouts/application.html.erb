@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+  <% if content_for? :nav %>
+  <%= content_for :nav %>
+  <% else %>
+  <%= render 'layouts/navbar' %>
+  <% end %>
+
+  <%= yield %>
+
+  <% if content_for? :nav %>
+  <%= content_for :nav %>
+  <% else %>
+  <%= render 'layouts/footer' %>
+  <% end %>
 
 </body>
 </html>
