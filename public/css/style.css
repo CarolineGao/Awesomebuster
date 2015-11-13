@@ -674,6 +674,19 @@ right: 13px;
     border-color: #29ABE2;
     color:#fff;
 }
+
+/** Cat Add border-blue css **/
+.border-blue{
+  border: 1px solid #000;
+  color:#000;
+}
+
+.border-blue:hover{
+  background-color: #29ABE2;
+  border-color: #29ABE2;
+  color:#fff;
+}
+/** End of Cat Add border-blue css **/
 /************************image hover effect*******************/
 
 .item-img-wrap{
