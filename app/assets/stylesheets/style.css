@@ -2063,9 +2063,6 @@ ul.post-desc li + li{
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
-.panel-heading {
-    cursor: pointer;
-}
 /************************************************* css for footers****************************************/
 
 /* #footer is by default*/
