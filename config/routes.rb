@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { sessions: "users/sessions" }
+  devise_for :companies, controllers: { sessions: "companies/sessions" }
+  
   get 'about/index' => 'aboutus#index_aboutus'
 
   get 'techexperts/index' => 'techexperts#index_techexpert'

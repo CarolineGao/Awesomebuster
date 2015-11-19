@@ -51,3 +51,5 @@ end
 # 11-11-2015 Cat Add Gemfile
 
 gem 'font-awesome-rails', '~> 4.1.0.0'
+
+gem 'devise'
