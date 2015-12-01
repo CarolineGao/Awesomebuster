@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { sessions: "users/sessions" }
   devise_for :companies, controllers: { sessions: "companies/sessions" }
-  
+
   get 'about/index' => 'aboutus#index_aboutus'
 
   get 'techexperts/index' => 'techexperts#index_techexpert'
@@ -29,7 +29,6 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
