@@ -1,4 +1,4 @@
 class BustersController < ApplicationController
-  def index
+  def index_buster
   end
 end

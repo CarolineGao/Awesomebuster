@@ -1,4 +1,4 @@
 class CareerController < ApplicationController
-  def index
+  def index_career
   end
 end

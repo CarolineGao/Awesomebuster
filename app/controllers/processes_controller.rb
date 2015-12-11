@@ -1,4 +1,4 @@
 class ProcessesController < ApplicationController
-  def index
+  def index_product
   end
 end

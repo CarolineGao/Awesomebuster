@@ -1,4 +1,4 @@
 class PricesController < ApplicationController
-  def index
+  def index_price
   end
 end

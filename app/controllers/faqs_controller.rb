@@ -1,4 +1,4 @@
 class FaqsController < ApplicationController
-  def index
+  def index_faq
   end
 end

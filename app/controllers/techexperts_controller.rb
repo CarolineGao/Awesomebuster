@@ -1,4 +1,4 @@
 class TechexpertsController < ApplicationController
-  def index
+  def index_techexpert
   end
 end

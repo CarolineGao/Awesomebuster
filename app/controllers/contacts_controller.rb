@@ -1,4 +1,4 @@
 class ContactsController < ApplicationController
-  def index
+  def index_contact
   end
 end
