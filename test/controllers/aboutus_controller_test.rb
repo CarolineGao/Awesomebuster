@@ -4,4 +4,9 @@ class AboutusControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_select "title", "Bugsters | Our Story"
+  end
 end
