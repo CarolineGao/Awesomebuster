@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'terms' => 'static_pages#terms'
+
+  get 'companies/signup' => 'companies#new'
+
+  get 'testers/signup' => 'testers#new'
+
   devise_for :users, controllers: { sessions: "users/sessions" }
 
   get 'about' => 'aboutus#index_aboutus'
@@ -22,6 +28,9 @@ Rails.application.routes.draw do
   get 'blogs' => 'blogs#index_blog'
 
   get 'home' => 'home#index'
+
+  resources :testers
+  resources :companies
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

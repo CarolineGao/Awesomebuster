@@ -1,0 +1,17 @@
+<% provide(:title, @company.company_name) %>
+<% content_for :nav, render('layouts/nav_signup') %>
+
+<div class="container">
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="company_info">
+        <h1>
+          <%= gravatar_for_company @company %>
+          <%= @company.company_name %>
+        </h1>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<div class="divide80"></div>

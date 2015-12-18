@@ -1,0 +1,66 @@
+<% provide(:title, "Sign Up") %>
+<% content_for :nav, render('layouts/nav_signup') %>
+
+<body>
+  <div class="divide50"></div>
+
+  <div class="container">
+    <div class="company_signup">
+      <h1>Sign up</h1>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <%= form_for(@company) do |f| %>
+            <%= render 'shared/error_messages_companies' %>
+
+            <div class='divide15'></div>
+            <section class="panel_register">
+              <h6>Your Organization</h2>
+              <p>An organization allows you to create and run your multiple products with the crowd.</p>
+              <%= f.label :company_name, "Company Name" %>
+              <%= f.text_field :company_name, class: 'form-control' %>
+            </section>
+
+            <div class='divide15'></div>
+            <section class="panel_register">
+              <h6>Your Account</h2>
+              <p>Your account allows you to manipulate your organization account and contact with the crowd.</p>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <%= f.label :first_name, "First Name" %>
+                  <%= f.text_field :first_name, class: 'form-control' %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :last_name, "Last Name" %>
+                  <%= f.text_field :last_name, class: 'form-control' %>
+                </div>
+              </div>
+
+              <%= f.label :email %>
+              <%= f.email_field :email, class: 'form-control' %>
+
+              <%= f.label :password %>
+              <%= f.password_field :password, class: 'form-control' %>
+
+              <%= f.label :password_confirmation, "Password Confirmation" %>
+              <%= f.password_field :password, class: 'form-control' %>
+
+            </section>
+
+            <div class='divide15'></div>
+
+            <section class="panel_submission">
+              <%= f.submit "Create a company account", class: "btn btn-primary" %>
+              <p>By clicking 'Create a company account', you agree to our <a href="/terms">"Terms & Conditions"</a> and acknowledge that you have read our <a href="#">Privacy Policy</a> and <a href="#">Disclosure Guideline</a>.</p>
+              <div class="divide15"></div>
+              <h6>Already have an account? <%= link_to "Sign in", "#" %></h6>
+            </section>
+
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divide80"></div>
+</body>

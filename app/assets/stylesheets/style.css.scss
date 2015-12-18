@@ -53,7 +53,7 @@ button,
 select,
 textarea,label {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 hr {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #060606;
     font-weight: 700;
     margin: 0;
-   font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -772,8 +772,8 @@ input[type="color"],
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    font-size: 12px;
-    color: #7a7a7a;
+    font-size: 16px;
+    color: #262626;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -783,6 +783,7 @@ input[type="color"],
     -moz-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
 }
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,

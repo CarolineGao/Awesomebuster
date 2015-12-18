@@ -106,13 +106,17 @@
     <%= render 'layouts/navbar' %>
     <% end %>
 
-    <%= yield %>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="divide20"></div>
+        <div class="alert alert-<%= message_type %>">
+          <%= message %>
+        </div>
+      <% end %>
+    </div>
 
-    <% if content_for? :nav %>
-    <%= content_for :nav %>
-    <% else %>
-    <%= render 'layouts/footer' %>
-    <% end %>
+    <%= yield %>
+    <%= render 'layouts/footer' unless @skip_footer %>
 
 </body>
 </html>
