@@ -1,3 +1,5 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @import url("http://fonts.googleapis.com/css?family=Volkhov:400italic");
 @import url("http://fonts.googleapis.com/css?family=Raleway:600,700,800");
@@ -170,8 +172,8 @@ p {
 p.sub-text{
     font-style: italic;
     font-size:18px;
-    line-height: 29px;
-    font-weight: 400;
+    line-height: 32px;
+    font-weight: 500;
     color:#bbb;
     font-family: 'Volkhov', serif !important;
 }
