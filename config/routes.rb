@@ -1,33 +1,26 @@
 Rails.application.routes.draw do
-  get 'terms' => 'static_pages#terms'
+  root 'home#index'
 
   get 'companies/signup' => 'companies#new'
-
   get 'testers/signup' => 'testers#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
 
   devise_for :users, controllers: { sessions: "users/sessions" }
 
   get 'about' => 'aboutus#index_aboutus'
-
   get 'techexperts' => 'techexperts#index_techexpert'
-
   get 'products' => 'products#index_product'
-
   get 'processes' => 'processes#index_process'
-
   get 'prices' => 'prices#index_price'
-
   get 'faqs' => 'faqs#index_faq'
-
   get 'contacts' => 'contacts#index_contact'
-
   get 'career' => 'career#index_career'
-
   get 'busters' => 'busters#index_buster'
-
   get 'blogs' => 'blogs#index_blog'
-
   get 'home' => 'home#index'
+  get 'terms' => 'static_pages#terms'
 
   resources :testers
   resources :companies
@@ -36,7 +29,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

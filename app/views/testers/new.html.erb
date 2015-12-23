@@ -4,8 +4,8 @@
 <body>
   <div class="divide50"></div>
 
-  <div class = "container">
-    <div class = "tester_signup">
+  <div class="container">
+    <div class="user_signup">
       <h1>Sign up</h1>
 
       <div class="row">
@@ -25,9 +25,8 @@
             <%= f.label :password_confirmation, "Password Confirmation" %>
             <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-            <%= f.submit "Create my account", class: "btn btn-primary" %>
-
             <section class="panel_submission">
+              <%= f.submit "Create my account", class: "btn btn-primary" %>
               <p>By clicking 'Create my account', you agree to our <a href="/terms">"Terms & Conditions"</a> and acknowledge that you have read our <a href="#">Privacy Policy</a> and <a href="#">Disclosure Guideline</a>.</p>
               <div class="divide15"></div>
               <h6>Already have an account? <%= link_to "Sign in", "#" %></h6>

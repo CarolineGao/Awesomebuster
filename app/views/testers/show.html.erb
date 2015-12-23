@@ -1,21 +1,20 @@
 <% provide(:title, @tester.name) %>
-<% content_for :nav, render('layouts/nav_signup') %>
 
-<body>
-
-  <div class= "container">
-    <div class= "row">
-      <aside class= "col-md-4">
-        <section class= "tester_info">
-          <h1>
-            <%= gravatar_for @tester %>
-            <%= @tester.name %>
-          </h1>
-        </section>
-      </aside>
-    </div>
+<div class= "container">
+  <div class= "row">
+    <aside class= "col-md-4">
+      <section class= "tester_info">
+        <h1>
+          <%= gravatar_for @tester %>
+          <%= @tester.name %>
+        </h1>
+      </section>
+    </aside>
   </div>
+</div>
 
-  <div class="divide80"></div>
+<div class="divide80"></div>
 
-</body>
+<!-- Caroline Add -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- End of Caroline Add -->

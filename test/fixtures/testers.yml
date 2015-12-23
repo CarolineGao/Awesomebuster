@@ -9,3 +9,8 @@
   #email: MyString
 
 # empty
+
+caroline:
+  name: Caroline Gao
+  email: carolinegao@tester.com
+  password_digest: <%= Tester.digest('password') %>
