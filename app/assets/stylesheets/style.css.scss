@@ -2622,10 +2622,10 @@ p.dropcap:first-letter{
     color:red;
 }
 
-label span{
-    color:red;
-    margin-left: 5px;
-}
+/*label span{
+    color:#777;
+    margin-left: 15px;
+}*/
 .required span{
     color:red;
 }
@@ -3642,10 +3642,10 @@ body.invoice{
     color:#29ABE2;
     font-weight: 400;
 }
-.dropdown-login-box input[type=checkbox] {
+/**.dropdown-login-box input[type=checkbox] {
     margin: 5px -20px 0;
     line-height: normal;
-}
+}*/
 .dropdown-login-box p{
     margin: 0;
 }

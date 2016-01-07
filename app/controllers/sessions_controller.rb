@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if tester && tester.authenticate(params[:session][:password])
       # Log the tester in and redirect to the tester's show page.
       log_in tester
+      params[:session][:remember_me] == '1' ? remember(tester) : forget(tester)
       redirect_to tester
     else
       # Create an error message.
@@ -16,7 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 end

@@ -11,18 +11,23 @@
       <div class="col-md-6 col-md-offset-3">
         <%= form_for(:session, url: login_path) do |f| %>
 
-          <%=f.label :email %>
-          <%=f.email_field :email, class: 'form-control' %>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
 
-          <%=f.label :password %>
-          <%=f.password_field :password, class: 'form-control' %>
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
 
-          <%= f.submit "Log in", class: "btn btn-primary" %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %>
+            <span>Remember me</span>
+          <% end %>
+
+          <%= f.submit "Log in with tester account", class: "btn btn-primary" %>
 
         <% end %>
 
         <p>Don't have an account? <%= link_to "Sign up", testers_signup_path %>
-           or <%= link_to "Create a product", companies_signup_path %>
+           or <%= link_to "Login with Company account", companies_signup_path %>
         </p>
 
       </div>
