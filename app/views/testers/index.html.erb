@@ -1,0 +1,84 @@
+<% provide(:title, 'All busters') %>
+
+<body>
+  <div class="divide50"></div>
+
+  <div class="container">
+    <div class="container shopping-cart-container">
+          <div class="row">
+              <div class="col-sm-12 margin30">
+                  <%= will_paginate %>
+
+                  <table class="table table-striped shopping-cart-table">
+                      <tbody>
+                        <!-- Table Title -->
+                        <tr><!--tr means move to next row similar to li-->
+                        <th>
+                            Busters
+                        </th>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Bugs
+                        </th>
+                        <th>
+                            Bounties
+                        </th>
+                        <th>
+                            Reputation
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        </tr>
+                        <!-- End of Table Title -->
+
+                        <!-- Table contents with dynamic data -->
+                        <% @testers.each do |tester| %>
+                          <tr>
+                          <td>
+                            <%= gravatar_for tester %>
+                          </td>
+                          <td>
+                            <%= link_to tester.name, tester %>
+                          </td>
+                          <td>
+                             <i class="fa fa-bolt"></i> 90
+                          </td>
+                          <td>
+                            $36,000.00
+                          </td>
+                          <td>
+                             <ul class="list-inline rating-list">
+                               <li><i class="fa fa-heartbeat yellow"></i></li>
+                               <li><i class="fa fa-heartbeat yellow"></i></li>
+                               <li><i class="fa fa-heartbeat "></i></li>
+                               <li><i class="fa fa-heartbeat"></i></li>
+                               <li><i class="fa fa-heartbeat"></i></li>
+                             </ul>
+                          </td>
+                          <td>
+                          <!-- Admin delete other users -->
+                          <% if current_tester.admin? && !current_tester?(tester) %>
+                            | <%= link_to "delete", tester, method: :delete,
+                                                            data: { confirm: "Confirm Delete?" } %>
+                          <% end %>
+                          <!-- End of Admin delete -->
+                          </td>
+                          </tr>
+                        <% end %>
+
+                        <!-- End of Table Contents -->
+
+                      </tbody>
+                  </table><!--cart table end-->
+
+                  <%= will_paginate %>
+
+              </div>
+          </div>
+    </div>
+
+ </div>
+</body>

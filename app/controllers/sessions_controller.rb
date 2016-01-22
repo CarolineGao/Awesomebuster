@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       # Log the tester in and redirect to the tester's show page.
       log_in tester
       params[:session][:remember_me] == '1' ? remember(tester) : forget(tester)
-      redirect_to tester
+      redirect_back_or tester
     else
       # Create an error message.
       flash.now[:danger] = 'Invalid email or password'

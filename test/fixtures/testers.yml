@@ -14,3 +14,26 @@ caroline:
   name: Caroline Gao
   email: carolinegao@tester.com
   password_digest: <%= Tester.digest('password') %>
+  admin: true
+
+david:
+  name: David Stapleton
+  email: davidstapleton@tester.com
+  password_digest: <%= Tester.digest('password') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= Tester.digest('password') %>
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  password_digest: <%= Tester.digest('password') %>
+
+<% 30.times do |n| %>
+tester_<%= n %>:
+  name: <%= "Tester #{n}" %>
+  email: <%= "tester-#{n}@example.com" %>
+  password_digest: <%= Tester.digest('password') %>
+<% end %>
