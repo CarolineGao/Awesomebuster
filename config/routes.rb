@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   root 'home#index'
 
   get 'companies/signup' => 'companies#new'
@@ -25,6 +29,7 @@ Rails.application.routes.draw do
   resources :testers
   resources :companies
   resources :account_activations, only: [:edit]
+  resources :password_resets,     only: [:new, :create, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

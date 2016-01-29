@@ -1,0 +1,32 @@
+<% provide(:title, "Forgot password") %>
+<% content_for :nav, render('layouts/nav_signup') %>
+
+<body>
+  <div class="divide80"></div>
+
+  <div class="container">
+    <div class="user_signup">
+      <h1>Reset password</h1>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <%= form_for(@tester, url: password_resets_path(params[:id])) do |f| %>
+            <%= render 'shared/error_messages_testers' %>
+
+            <%= hidden_field_tag :email, @tester.email %>
+
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control' %>
+
+            <%= f.label :password_confirmation, "Confirmation" %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+            <%= f.submit "Update password", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divide80"></div>
+</body>

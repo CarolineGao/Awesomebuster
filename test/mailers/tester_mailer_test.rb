@@ -12,4 +12,15 @@ class TesterMailerTest < ActionMailer::TestCase
     assert_match tester.activation_token,   mail.body.encoded
     assert_match CGI::escape(tester.email), mail.body.encoded
   end
+
+  test "password_reset" do
+    tester = testers(:caroline)
+    tester.reset_token = Tester.new_token
+    mail = TesterMailer.password_reset(tester)
+    assert_equal "Password reset", mail.subject
+    assert_equal [tester.email], mail.to
+    assert_equal ["noreply@example.com"], mail.from
+    assert_match tester.reset_token,      mail.body.encoded
+    assert_match CGI::escape(tester.email), mail.body.encoded
+  end
 end

@@ -10,9 +10,8 @@ class TesterMailer < ApplicationMailer
   #
   #   en.tester_mailer.password_reset.subject
   #
-  def password_reset
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def password_reset(tester)
+    @tester = tester
+    mail to: tester.email, subject: "Password reset"
   end
 end
