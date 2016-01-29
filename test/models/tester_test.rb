@@ -57,4 +57,8 @@ class TesterTest < ActiveSupport::TestCase
     @tester.password = @tester.password_confirmation = "a" * 5
     assert_not @tester.valid?
   end
+
+  test "authenticated? should return false for a tester with nil digest" do
+    assert_not @tester.authenticated?(:remember, '')
+  end
 end

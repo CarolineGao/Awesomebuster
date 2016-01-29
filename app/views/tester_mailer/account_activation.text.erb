@@ -1,0 +1,5 @@
+Hi <%= @tester.name %>
+
+Welcome to the Bugsters platform! Click on the link below to activate your account:
+
+<%= edit_account_activation_url(@tester.activation_token, email: @tester.email) %>

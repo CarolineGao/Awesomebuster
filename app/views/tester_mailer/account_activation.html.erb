@@ -1,0 +1,10 @@
+<h1>Bugsters</h1>
+
+<p>Hi <%=@tester.name %>,</p>
+
+<p>
+  Welcome to the Bugsters platform! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@tester.activation_token,
+                                                    email: @tester.email) %>

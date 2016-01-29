@@ -18,7 +18,7 @@ module SessionsHelper
       @current_tester ||= Tester.find_by(id: session[:tester_id])
     elsif (tester_id = cookies.signed[:tester_id])
       tester = Tester.find_by(id: tester_id)
-      if tester && tester.authenticated?(cookies[:remember_token])
+      if tester && tester.authenticated?(:remember, cookies[:remember_token])
         log_in tester
         @current_tester = tester
       end

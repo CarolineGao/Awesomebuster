@@ -23,9 +23,9 @@ class TestersController < ApplicationController
   def create
     @tester = Tester.new(tester_params)
     if @tester.save
-      log_in @tester
-      flash[:success] = "Welcome to join the Awesomebuster. Explore a product now!"
-      redirect_to @tester
+      @tester.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       render 'new'
     end
