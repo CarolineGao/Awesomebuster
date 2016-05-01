@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'techexperts' => 'techexperts#index_techexpert'
   get 'products' => 'products#index_product'
   get 'processes' => 'processes#index_process'
-  get 'prices' => 'prices#index_price'
+  get 'prices' => 'prices#index_price_vc'
   get 'faqs' => 'faqs#index_faq'
   get 'contacts' => 'contacts#index_contact'
   get 'career' => 'career#index_career'
