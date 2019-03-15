@@ -209,9 +209,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <iframe width="490" height="275" src="<%= youtube_video @video.https://youtu.be/BpAdXf24trY %>" frameborder="0" allowfullscreen></iframe>
-
-                </div>
+                    <iframe src='https://www.youtube.com/embed/BpAdXf24trY<%= @episode.youtube_id %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
             </div>
             <!-- End of warehouse AGV robot-->
 
