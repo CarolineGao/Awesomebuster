@@ -1,0 +1,285 @@
+    <% provide(:title, "Our Story") %>
+    <body>
+
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>About Us</h4>
+                    </div>
+                    <div class="col-sm-6 hidden-xs text-right">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li>about us</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div><!--breadcrumbs-->
+        <div class="divide80"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 margin20">
+                    <h3 class="heading">A little about us</h3>
+                    <p>
+
+                      <p>
+                       We are an AI-powered robotics company located in Sydney and Shenzhen <br>which
+                       provides robotic products and AI technical solutions to international business clients, including hotels, beadhouses, restaurants and warehouses.
+                      <br>
+                    </p>
+                    <p><a href="/products/index" class="btn border-blue btn-lg">Our Services</a></p>
+                </div>
+                <div class="col-md-6">
+                    <img src="<%= asset_path "showcase-10.png" %>" class="img-responsive" alt="">
+                </div>
+            </div><!--about intro-->
+
+            <!--Cat Addition Our Business Model-->
+            <section id="services-bg-wrap" class="white-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 hidden-sm">
+                            <img src="<%= asset_path "showcase-11.jpg" %>" class="img-responsive wow animated fadeInLeft" alt="mockup">
+                        </div>
+                        <div class="col-md-8  col-xs-12 service-4-meta">
+                            <h3>Our Robot Products and AI Solutions</h3>
+                            <span class="center-line"></span>
+                            <div class="divide20"></div>
+                            <p>
+                              <strong>We sell two SERVICE ROBOTICS PRODUCTS:</strong>
+                              <br><strong><font color="orange">SERVICE DELIVERY ROBOT</font></strong>
+                              which could take lift and deliver items to each room autonoumously
+                              by using SLAM, navigation AI techniques;
+                              <br>
+                              <strong><font color="#00bfff">RECEPTION ASSISTANT ROBOT</font></strong> working in hotels to help customers to check-in with billingual voice communication (English and Chinese), one robot could help business reduce two human costs.
+                              <br><br>
+                              We also provide <strong><font color="orange">AI technical solutions</font></strong>
+                              including <strong>Face recognition, object recognition, NLP, and multimodal fusion AI techniques</strong>
+                              to help business clients
+                              reduce human resource cost and better and more effectively understand their users, thereby increasing sales.
+                              <br><br>
+                              Our conversational AI has the best natural language understanding capability in Chinese and English.
+                              She recognizes intent, meaning, and emotion, and she has memory.
+                              As well as conversing with you fluently in Chinese and English,
+                              she can play music, tell jokes, remind you about appointments,
+                              remember things for you, check the weather, search for knowledge,
+                              call didi, book a restaurant, and so on.
+                            </p>
+                            <div class="divide20"></div>
+
+                            <a href="#" class="btn border-blue btn-lg">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--services with the showcase mockups-->
+            <!--End of Cat Addition Our Business Model-->
+
+            <div class="divide60"></div>
+
+            <div class="row">
+                <div class="col-md-4 margin20">
+                    <h3 class="heading">Whay us?</h3>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <i class="fa fa-desktop"></i>    Save 60% Cost of Product Development
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Hiring a full-time software testers, it cost at least $5,000 per month. Bugsters provides result-based testing platform. You only need to pay based on the bugs which the software busters find.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <i class="fa fa-crop"></i>    Highly Improve Quality
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    The best testers are users who are not familiar with your products. A tester's testing capability and imagination is limited. Bugsters provide a crowd-testing platform which allows world's users to fully cover the real usability scenarios.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        <i class="fa fa-cogs"></i>    Hear Users' Voice instantly
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                   Bugsters provides the platform to market your products for free and you can hear your users' true voice in the first time because we pay for the result.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--why hire us-->
+                <div class="col-md-4 margin20">
+                    <h3 class="heading">We are good at</h3>
+                    <div class="skills-wrapper wow animated bounceIn animated" data-wow-delay="0.2s">
+                        <h3 class="heading-progress">Result-driven to Pay Bugs <span class="pull-right">88%</span></h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 88%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" role="progressbar">
+                            </div>
+                        </div>
+                        <h3 class="heading-progress">Crowd-platforms to Dig Bugs <span class="pull-right">78%</span></h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 78%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" role="progressbar">
+                            </div>
+                        </div>
+                        <h3 class="heading-progress">Crowd-geo to Connect Users Instantly<span class="pull-right">82%</span></h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
+                            </div>
+                        </div>
+                        <h3 class="heading-progress">Product Quality & Usability all-round Analysis<span class="pull-right">72%</span></h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 72%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="72" role="progressbar">
+                            </div>
+                        </div>
+                    </div><!--skills-->
+                </div><!--col-->
+                <div class="col-md-4 margin20">
+                    <h3 class="heading">But we are not stopping here</h3>
+                    <p>
+                        We also connect world's tech experts to help enterprises to solve their problems through our crowd-tech expert online platform;
+                    </p>
+                    <ul class="list-unstyled highlight-list">
+                        <li><i class="fa fa-check"></i> Fix the knotty bugs & problems</li>
+                        <li><i class="fa fa-check"></i> Advise radical technical strategy</li>
+                        <li><i class="fa fa-check"></i> Clean & valid technical architecture design</li>
+                        <li><i class="fa fa-check"></i> Control product & techinical risks</li>
+                    </ul>
+                </div>
+            </div><!--row of skills collapse and highlights-->
+
+        </div><!--.container-->
+
+
+        <div class="divide60"></div>
+
+        <div class="container">
+            <!-- Leading Team Members-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-heading">
+                        <h2>Leading team members</h2>
+                        <span class="center-line"></span>
+                        <p class="lead">We are an international team, positively passionate about building internet platforms which could make people's lives better.</p>
+                    </div><!--center-heading-->
+                </div>
+            </div>
+
+            <div class="container-about-board-member">
+              <div class="row">
+                <div class="col-md-3 margin20">
+                </div>
+                <div class="col-md-3 margin20">
+                   <img src="<%= asset_path "customer-3.jpg" %>" class= "img-circle img-responsive board-member-img" style="width:130px; height:130px;" alt="">
+                   <br>
+                   <h4>Caroline Gao</h4>
+                   <h6>Founder & Product Director</h6>
+                   <ul class="list-inline social-1">
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                   </ul>
+                </div>
+
+                <div class="col-md-3 margin20">
+                   <img src="<%= asset_path "customer-4.png" %>" class= "img-circle img-responsive" style="width:130px; height:130px;" alt="">
+                   <br>
+                   <h4>Zhaofeng Yuan</h4>
+                   <h6>Co-Founder & Tech Lead</h6>
+                   <ul class="list-inline social-1">
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                   </ul>
+                </div>
+
+                <div class="col-md-3 margin20">
+                </div>
+              </div>
+            </div>
+
+            <!-- End of Leading Team Members-->
+
+          <!-- #######  Advisors Section Start Here ########### >
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-heading">
+                        <h2>Advisors</h2>
+                        <span class="center-line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-about-board-member">
+              <div class="row">
+                <div class="col-md-4 margin20">
+                  <img src="<%= asset_path "customer-1-old.jpg" %>" class= "img-circle img-responsive" style="width:130px; height:130px;" alt="">
+                  <h4>Caroline Gao</h4>
+                  <h5>Founder & Chief Fire Starter</h5>
+                  <h5>Bragging rights:</h5>
+                  <p>
+                    Aim to build houses for homeless old people around the world. Will try my best to give my contribution.
+                  </p>
+                </div>
+
+                <div class="col-md-4 margin20">
+                  <img src="<%= asset_path "customer-2-old.jpg" %>" class= "img-circle img-responsive" style="width:130px; height:130px;" alt="">
+                  <h4>Caroline Gao</h4>
+                  <h5>Founder & Chief Fire Starter</h5>
+                  <h5>Bragging rights:</h5>
+                  <p>
+                    Aim to build houses for homeless old people around the world. Will try my best to give my contribution.
+                  </p>
+                </div>
+
+                <div class="col-md-4 margin20">
+                  <img src="<%= asset_path "customer-3-old.jpg" %>" class= "img-circle img-responsive" style="width:130px; height:130px;" alt="">
+                  <h4>Caroline Gao</h4>
+                  <h5>Founder & Chief Fire Starter</h5>
+                  <h5>Bragging rights:</h5>
+                  <p>
+                    Aim to build houses for homeless old people around the world. Will try my best to give my contribution.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <#######   End of Advisors   ########################-->
+
+            <!-- Team Members -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-heading">
+                        <h2>Team Members</h2>
+                        <span class="center-line"></span>
+                        <p class="lead">We welcome passionate people to <a href="/career/index">join us</a> and work together to make people's lives better.</p>
+                    </div><!--center-heading-->
+                </div>
+            </div>
+
+            <!-- End of Team Members-->
+
+        </div><!--team-->
+
+        <div class="divide60"></div>
+
+
+    </body>
+</html>
